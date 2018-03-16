@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WebForms.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,7 +14,8 @@ namespace WebForms.Pages
 	{
 		public HomePage()
 		{
-			InitializeComponent();
-		}
-	}
+            InitializeComponent();
+            BindingContext = new HomeViewModel();
+        }
+    }
 }
