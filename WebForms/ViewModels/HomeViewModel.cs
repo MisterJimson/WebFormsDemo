@@ -6,7 +6,7 @@ namespace WebForms.ViewModels
 {
     public class HomeViewModel
     {
-        public string WelcomeMessage = "test";
+        public string WelcomeMessage;
 
         public HomeViewModel()
         {

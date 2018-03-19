@@ -14,8 +14,9 @@ namespace WebForms.Pages
 	{
 		public HomePage()
 		{
+            var homeViewModel = new HomeViewModel();
+            BindingContext = homeViewModel;
             InitializeComponent();
-            BindingContext = new HomeViewModel();
         }
     }
 }
